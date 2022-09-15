@@ -1,0 +1,65 @@
+.Form_contact{
+    height: auto    ;
+    position: relative;
+    display: grid;
+    margin: 0px auto;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    width: 250px;
+    z-index: 10;
+    animation: render .5s linear;
+
+}
+.Form_contact > div{
+    font-size: 1.5rem;
+    height: auto;
+    color: white;
+}
+.Form_contact input {
+    height: 40px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius:5px;
+    border: none;
+}
+.Form_contact textarea {
+    height: 150px;
+    border-radius:5px;
+    width: 250px;   
+}
+.Form_contact h1 {
+    position: absolute;
+    top: -50px;
+    width: 200px;
+    left: 200px;
+    color: white;
+}
+.Form_contact button {
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: #206B4E;
+    border: none;
+    color: white;
+}
+@keyframes render {
+    0%{
+        scale: 0;
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@media (min-width: 600px) {
+    .Form_contact{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        width: 550px;
+        z-index: 10;
+    }
+    
+}

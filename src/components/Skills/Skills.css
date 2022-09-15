@@ -1,0 +1,98 @@
+.Skills{
+    width: 380px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    margin: 0px auto;
+    z-index: 10;
+    animation: render .5s linear;
+
+}
+.Skills > h1 {
+    text-align: center;
+    height: auto;
+    color: white;
+}
+.Card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: auto;
+    justify-content: space-around;
+    column-gap: 10px;
+}
+.Card > div{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    font-size: 5rem;
+    animation: rotate 0.5s ease-in;
+}
+.Card > div:nth-child(1){
+    animation-delay: 1s;
+}
+.Card > div:nth-child(2){
+    animation-delay: 2s;
+}
+.Card > div:nth-child(3){
+    animation-delay: 3s;
+}
+.Card > div:nth-child(4){
+    animation-delay: 4s;
+}
+.Card > div:nth-child(5){
+    animation-delay: 5s;
+}
+.Card > div > svg {
+    height: 100%;
+    fill: white;
+}
+@keyframes render {
+    0%{
+        scale: 0;
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+@keyframes rotate {
+    0%{
+        scale: 0;
+        transform: rotate(0deg);
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@media (min-width: 850px) {
+    .Skills{
+        min-width: 800px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+        margin: 0px auto;
+        z-index: 10;
+        animation: render .5s linear;
+    }
+    .Card {
+        display: flex;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 10px;
+    }
+    
+}

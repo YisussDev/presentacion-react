@@ -14,7 +14,6 @@ const Home = () => {
     <HomePage>
       <Nav />
       <PageRender>
-        <BackgroundImage src={bg} />
         <Routes>
           <Route exact path='/' element={<Welcome />} />
           <Route exact path='/profile' element={<Profile />} />

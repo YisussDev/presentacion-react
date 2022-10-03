@@ -1,7 +1,6 @@
-import styled, { keyframes } from 'styled-components'
-import bg from './image/bg.png'
+import styled from 'styled-components'
 import Nav from '../Nav/Nav'
-import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import Welcome from '../Welcome/Welcome'
 import Profile from '../Profile/Profile'
 import Proyect from '../Proyects/Proyect'
@@ -50,23 +49,4 @@ const PageRender = styled.div`
   width: 100%;
   overflow: hidden;
 
-`
-const intermitent = keyframes`
-   0%{
-    opacity: 1;
-   }
-   50%{
-    opacity: 0.5;
-   }
-   100%{
-    opacity: 1;
-   }
-`
-const BackgroundImage = styled.img`
-    height: auto;
-    width: 40%;
-    position: fixed;
-    z-index: 1;
-    right: 0px;
-    animation: ${intermitent} .9s infinite linear;
 `

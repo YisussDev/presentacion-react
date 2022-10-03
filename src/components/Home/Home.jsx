@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 import bg from './image/bg.png'
 import Nav from '../Nav/Nav'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 import Welcome from '../Welcome/Welcome'
 import Profile from '../Profile/Profile'
 import Proyect from '../Proyects/Proyect'
@@ -10,7 +10,7 @@ import Contact from '../Contact/Contact'
 
 const Home = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <HomePage>
       <Nav />
       <PageRender>
@@ -23,7 +23,7 @@ const Home = () => {
         </Routes>
       </PageRender>
     </HomePage>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

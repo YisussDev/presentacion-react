@@ -40,7 +40,7 @@ const inter = keyframes`
 
 const Message = styled.div`
     display: flex;
-    margin: 0px auto;
+    margin: auto auto;
     height: 90px;
     align-items: center;
     font-size: 3.5rem;

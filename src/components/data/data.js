@@ -1,5 +1,15 @@
 export const dataProyects = [
     {
+        name: 'Pokedex App',
+        description: 'Aplicación web de trivia',
+        image: './images/proyects/pkdx.png',
+        react: true,
+        html: true,
+        js: true,
+        css: true,
+        link: 'https://pokedex-jp-react.netlify.app/#/'
+    },
+    {
         name: 'Rick&Morty',
         description: 'Aplicación web de trivia',
         image: './images/proyects/randm.jpg',
@@ -8,16 +18,6 @@ export const dataProyects = [
         js: true,
         css: true,
         link: 'https://rick-morty-jp.netlify.app/'
-    },
-    {
-        name: 'MaxFlix',
-        description: 'Aplicación web de películas',
-        image: './images/proyects/maxflix.jpg',
-        react: true,
-        html: true,
-        js: true,
-        css: true,
-        link: 'https://maxflix-react.netlify.app/'
     },
     {
         name: 'WeatherApp',

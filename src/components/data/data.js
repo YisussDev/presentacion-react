@@ -1,5 +1,15 @@
 export const dataProyects = [
     {
+        name: 'TechGo! E-commerce',
+        description: 'Aplicación web de comercio',
+        image: './images/proyects/techgoo.png',
+        react: true,
+        html: true,
+        js: true,
+        css: true,
+        link: 'https://techgoo.netlify.app/#/'
+    },
+    {
         name: 'Pokedex App',
         description: 'Aplicación web de trivia',
         image: './images/proyects/pkdx.png',

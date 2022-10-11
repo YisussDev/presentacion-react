@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import styled, { keyframes } from 'styled-components'
 
 const Intermitent = () => {
-    const saludo = "¡Bienvenid@!"
+    const saludo = "¡Bienvenido(a)!"
     const [text, setText] = useState('')
     const [controlador, setControlador] = useState(0)
 
@@ -17,7 +17,7 @@ const Intermitent = () => {
             setControlador(0)
         },8000)
       }
-    },500)
+    },300)
   },[controlador])
 
   return (

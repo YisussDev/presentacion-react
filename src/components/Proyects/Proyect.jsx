@@ -31,19 +31,23 @@ const Proyect = () => {
       <ul className='Proyect' style={{transform: `translateX(-${position*(100/(dataProyects.length))}%)`, width: `${(dataProyects.length)*100}%`}}>
         {
           dataProyects.map((proyect, index) => {
-            return <li key={proyect.name} className='proyect_container'>
-                      <div>
-                        <h3>{proyect.name}</h3>
-                        <p>{proyect.description}</p>
-                        <div className='proyect_habilities'>
-                        {proyect.html&&<div><FaHtml5 /></div>}
-                        {proyect.css&&<div><FaCss3 /></div>}
-                        {proyect.js&&<div><FaJs /></div>}
-                        {proyect.react&&<div><FaReact /></div>}
-                      </div>
-                      </div>
-                      <img src={proyect.image} alt="" />
-                    </li>
+            return (
+                      <li key={proyect.name} className='proyect_container'>
+                        <a href={proyect.link} target='_blank' rel="noreferrer">
+                          <div>
+                            <h3>{proyect.name}</h3>
+                            <p>{proyect.description}</p>
+                            <div className='proyect_habilities'>
+                            {proyect.html&&<div><FaHtml5 /></div>}
+                            {proyect.css&&<div><FaCss3 /></div>}
+                            {proyect.js&&<div><FaJs /></div>}
+                            {proyect.react&&<div><FaReact /></div>}
+                          </div>
+                          </div>
+                          <img src={proyect.image} alt="" />
+                        </a>
+                      </li>
+            )
           })
         }
       </ul>

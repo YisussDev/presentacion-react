@@ -88,13 +88,13 @@
     padding: 0;
     overflow: hidden;
 }
-.proyect_container > img {
+.proyect_container > a > img {
     overflow: hidden;
     height: 100%;
     width: 300px;
     object-fit: cover;
 }
-.proyect_container > div {
+.proyect_container > a > div {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -106,14 +106,14 @@
     background-color: #53535396;
     z-index: 1000;
 }
-.proyect_container > div > h3 {
+.proyect_container > a > div > h3 {
     height: auto;
     padding: 10px 20px;
     border-radius: 20px;
     text-align: center;
     background-color: #00B871;
 }
-.proyect_container > div > p {
+.proyect_container > a > div > p {
     text-align: center;
     height: auto;
 }
@@ -181,7 +181,7 @@
         padding: 0;
         overflow: hidden;
     }
-    .proyect_container > img {
+    .proyect_container > a > img {
         overflow: hidden;
         height: 100%;
         width: 600px;

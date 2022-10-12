@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import logo from './image/jplogo.png'
 import { useNavigate } from 'react-router-dom';
 import { FaHome, FaUser, FaWrench, FaCode, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import './Animate.css'
 
 const Nav = () => {
   let navigate = useNavigate();
@@ -15,11 +16,11 @@ const Nav = () => {
           <Button style={actual===2?{color: '#00B871'}:null} onClick={()=> {setActual(2); navigate('/profile')}}><FaUser /></Button>
           <Button style={actual===3?{color: '#00B871'}:null} onClick={()=> {setActual(3); navigate('/skills')}}><FaWrench /></Button>
           <Button style={actual===4?{color: '#00B871'}:null} onClick={()=> {setActual(4); navigate('/proyects')}}><FaCode /></Button>
-          <Button style={actual===5?{color: '#00B871'}:null} onClick={()=> {setActual(5); navigate('/contact')}}><FaEnvelope /></Button>
         </Buttons>
         <Contact>
-          <Button href='https://github.com/YisussDev' target='_blank'  ><FaGithub /></Button>
-          <Button href='https://www.linkedin.com/in/jesuspaguayn/' target='_blank' ><FaLinkedin /></Button>
+          <Button id='envelope_animate' style={{color: '#00B871'}} href='mailto:jesuspaguay30@gmail.com' target='_blank'  ><FaEnvelope /></Button>
+          <Button style={{color: '#00B871'}} href='https://github.com/YisussDev' target='_blank'  ><FaGithub /></Button>
+          <Button style={{color: '#00B871'}} href='https://www.linkedin.com/in/jesuspaguayn/' target='_blank' ><FaLinkedin /></Button>
         </Contact>
     </NavBar>
   )
@@ -74,7 +75,6 @@ const Buttons = styled.div`
       flex-direction: column;
       align-items: center;
       width:2rem;
-      
     }
   }
 `
@@ -108,7 +108,7 @@ const Contact = styled.div`
   bottom: 20px;
   right: 20px;
   align-items: center;
-  min-height: calc(4rem + 16px);
+  min-height: calc(6rem + 16px);
   width:2rem;
   &{
     @media (min-width: 600px) {

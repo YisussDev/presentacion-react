@@ -5,7 +5,6 @@ import Welcome from '../Welcome/Welcome'
 import Profile from '../Profile/Profile'
 import Proyect from '../Proyects/Proyect'
 import Skill from '../Skills/Skill'
-import Contact from '../Contact/Contact'
 
 const Home = () => {
   return (
@@ -18,7 +17,6 @@ const Home = () => {
           <Route exact path='/profile' element={<Profile />} />
           <Route exact path='/skills' element={<Skill />} />
           <Route exact path='/proyects' element={<Proyect />} />
-          <Route exact path='/contact' element={<Contact />} />
         </Routes>
       </PageRender>
     </HomePage>

@@ -7,7 +7,7 @@
     row-gap: 20px;
     margin: 0px auto;
     z-index: 10;
-    animation: render .5s linear;
+    animation: renderX 1s ease;
 
 }
 .Skills > h1 {
@@ -51,15 +51,18 @@
     height: 100%;
     fill: white;
 }
-@keyframes render {
+@keyframes renderX {
     0%{
-        scale: 0;
+        opacity: 0;
+        transform: translateX(100%);
     }
     50%{
         scale: 1.2;
     }
     100%{
+        opacity: 1;
         scale: 1;
+        transform: translateX(0%);
     }
 }
 @keyframes rotate {
@@ -85,7 +88,7 @@
         row-gap: 20px;
         margin: 0px auto;
         z-index: 10;
-        animation: render .5s linear;
+        animation: renderX 1s ease;
     }
     .Card {
         display: flex;

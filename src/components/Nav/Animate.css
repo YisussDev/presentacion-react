@@ -1,0 +1,26 @@
+#envelope_animate{
+    animation: zumb 1s ease infinite;
+}
+
+
+@keyframes zumb {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(25deg);
+        scale: 1.1;
+    }
+    50%{
+        transform: rotate(-25deg);
+        scale: 1.2;
+    }
+    75%{
+        transform: rotate(25deg);
+        scale: 1.1;
+    }
+    100%{
+        transform: rotate(0deg);
+        scale: 1;
+    }
+}

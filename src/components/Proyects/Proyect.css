@@ -1,81 +1,30 @@
-.Proyect {
-    height: 620px ;
-    width: 800px;
-    margin: 0px auto;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    row-gap: 10px;
-    column-gap: 10px;
-    z-index: 10;
-    overflow: auto;
-    animation: render .5s linear;
-}
-.Proyect_card{
-    width: 350px;
-    text-decoration: none;
-    position: relative;
-    border-radius: 20px;
-    height: 200px;
+.proyects_carrousel{
+    width: 297px;
+    height: 500px;  
+    border-radius: 10px;
+    margin: 0px auto;
+    box-shadow: 0px 2px 3px 3px #16161693;
     overflow: hidden;
-    border: 10px double #206B4E ;
-}
-.Proyect_card > img{
-    position: absolute;
-    height: 150%;
-    width: auto;
-    top: -25%;
-    left: -20%;
-    width: auto;
-    z-index: 0;
-}
-.Proyect_card > div > h1,h2, p{
-    height: auto;
     position: relative;
-    text-align: center;
-    color: white;
-    z-index: 10000;
+    padding: 0;
+    animation: renderX 1s ease;
 }
-.Proyect_hover {
-    background-color: rgba(0, 0, 0, 0.829);
-    opacity: 0;
-    position: absolute;
+.Proyect {
+    min-width: 900px;
+    height: 500px;  
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;    
-    z-index: 100;
-    transition: .3s ease;
+    flex-direction: row;
+    list-style: none;
+    transition: all 0.5s;
 }
-.Proyect_hover:hover{
-    opacity: 1;
-    cursor: pointer;
+.Proyect > li {
+    padding: 0;
+    margin: 0;
+    position: relative;
 }
-.Proyect_habilities{
-    height: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    column-gap: 10px;
-    margin-top: 10px;
-}
-.Proyect_habilities > div  {
-    height: 100%;
-    width: 40px;
-    font-size: 1.7rem;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Proyect_habilities > div > svg {
-    height: auto;
-    width: 70%;
-}
-
 .Proyect::-webkit-scrollbar {
     -webkit-appearance: none;
 }
@@ -117,19 +66,120 @@
         scale: 1;
     }
 }
+@keyframes renderX {
+    0%{
+        opacity: 0;
+        scale: 1;
+        transform: translateX(100%);
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+        transform: translateX(0%);
+    }
+}
 
-@media (min-width: 500px) {
-    .Proyect {
-        min-height: 420px ;
-        width: 800px;
-        margin: 0px auto;   
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        row-gap: 10px;
-        column-gap: 10px;
-        z-index: 10;
-        overflow: auto;
+.proyect_container{
+    width: 300px;
+    height: 500px;
+    padding: 0;
+    overflow: hidden;
+}
+.proyect_container > img {
+    overflow: hidden;
+    height: 100%;
+    width: 300px;
+    object-fit: cover;
+}
+.proyect_container > div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #53535396;
+    z-index: 1000;
+}
+.proyect_container > div > h3 {
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #00B871;
+}
+.proyect_container > div > p {
+    text-align: center;
+    height: auto;
+}
+.proyect_habilities{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    align-items: center;
+}
+.proyect_habilities > div {
+    height: 50px;
+    width: 50px;
+}
+.proyect_habilities > div > svg {
+    height: 100%;
+    width: 100%;
+}
+.proyects_carrousel > button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 10000;
+    position: absolute;
+    border: none;
+    padding: 10px;
+    background-color: #00B871;
+    border: 2px solid #01794b;
+    box-shadow: 0px 2px 3px 3px #16161693;
+}
+.next_proyect{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+.previous_proyect{
+    position: absolute;
+    bottom:10px;
+    left: 5px;
+}
+.proyects_carrousel > button > svg {
+    height: 100%;
+    width: 100%;
+    color: black;
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .proyects_carrousel{
+        width: 600px;
+        height: 400px;
+    }
+    .proyect_container{
+        width: 600px;
+        height: 400px;
+        padding: 0;
+        overflow: hidden;
+    }
+    .proyect_container > img {
+        overflow: hidden;
+        height: 100%;
+        width: 600px;
+        object-fit: cover;
+    }
+    .proyects_carrousel > button{
+        bottom: 175px;
     }
 }

@@ -1,6 +1,6 @@
 export const dataProyects = [
     {
-        name: 'TechGo! E-commerce',
+        name: 'TechGo! Technology',
         description: 'Aplicación web de comercio',
         image: './images/proyects/techgoo.png',
         react: true,

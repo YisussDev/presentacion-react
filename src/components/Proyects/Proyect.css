@@ -144,6 +144,7 @@
     background-color: #00B871;
     border: 2px solid #01794b;
     box-shadow: 0px 2px 3px 3px #16161693;
+    transition: all .3s;
 }
 .next_proyect{
     position: absolute;
@@ -160,6 +161,13 @@
     width: 100%;
     color: black;
     pointer-events: none;
+}
+.proyects_carrousel > button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+.proyects_carrousel > button:active{
+    transform: translateY(-10px);
 }
 
 @media (min-width: 768px) {

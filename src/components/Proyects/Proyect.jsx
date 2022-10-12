@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 
 const Proyect = () => {
-  const [position, setPosition] = useState(2)
+  const [position, setPosition] = useState(0)
   const nextProyect = () =>{
     if(position < dataProyects.length-1){
       setPosition(position+1)

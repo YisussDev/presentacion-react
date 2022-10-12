@@ -1,7 +1,6 @@
 import React from 'react'
 import './Proyect.css'
 import {dataProyects} from '../data/data.js'
-import CardProyect from './CardProyect'
 import { FaHtml5, FaJs, FaCss3, FaReact, FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import { useState } from 'react'
 

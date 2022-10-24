@@ -11,10 +11,9 @@ const Profile = () => {
       <div>
         <h1>Jesús Alberto Paguay Naranjo</h1>
         <h2>React Js Developer</h2>
-        <p>Yo soy Jesus, muchas gracias por visitar mi portafolio, aquí podrás encontrar información 
-          de mis proyectos y mis habilidades, no dudes en contactarte conmigo 😉🐱
+        <p>Soy un Desarrollador Front-End, proactivo y responsable, también poseo habilidades técnicas para afrontar cualquier reto, con todas las ganas de aportar a la empresa todos mis conocimientos. 
         </p>
-        <a download='CVJP' href='./documents/CVJP.pdf'>
+        <a download='CVJP' href='./documents/CVJP2210.pdf'>
         <button className="cta">
           <span>Descargar CV</span>
           <svg viewBox="0 0 13 10" height="10px" width="15px">
